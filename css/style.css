@@ -49,13 +49,22 @@ html, body {
   align-items: center;
   max-width:1120px;
   height: 88px;
+  justify-content: space-between;
 }
+
+.header__sd {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .header__md {
   display: flex;
   gap: 16px;
   padding-left: 16px;
   align-items: center;
   height: 88px;
+  margin-right: 22px;
 }
 
 .header--hidden-sd {
@@ -146,6 +155,9 @@ html, body {
 .main {
   margin: 0;
 }
+
+
+
 .main__list{
   display:flex;
   margin: 0 22px 0 10px;
@@ -193,14 +205,15 @@ h1 {
   letter-spacing: -0.6px;
 }
 
+.main__options {
+  margin-right: 22px;
+}
+
 .main__options--hidden {
   display: none;
   visibility: hidden;
 }
 
-.main__options {
-  margin-right: 22px;
-}
 
 .main__option {
   display: flex;
