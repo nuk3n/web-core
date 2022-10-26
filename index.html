@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
@@ -7,55 +7,55 @@
   <title>Title</title>
 </head>
 <body>
-  <div class="header">
-    <div class="header__icon"><img src="icons/burger.png" alt="Меню"></div>
-    <div class="header__icon header__icon--hidden-320"><img src="icons/divider.png" alt=""></div>
-    <div class="header__icon"><img src="icons/logo.png" alt="Логотип"></div>
-    <div class="header__720">
-      <div class="header__icon header__icon--hidden-320"><img src="icons/call.png" alt="Звонок"></div>
-      <div class="header__icon header__icon--hidden-320"><img src="icons/chat.png" alt="Чат"></div>
-      <div class="header__icon header__icon--hidden-320"><img src="icons/profile.png" alt="Профиль"></div>
-      <div class="header__icon"><img src="icons/divider.png" alt=""></div>
-      <div class="header__icon"><img src="icons/repair.png" alt="Услуги"></div>
-      <div class="header__icon"><img src="icons/checkstatus.png" alt="Поиск"></div>
+<div class="header">
+  <button class="button"><span class="button__burger"></span></button>
+  <img class="header--hidden-sd" src="icons/divider.png" alt="">
+  <img src="icons/logo.png" alt="Логотип">
+  <div class="header__md">
+    <button class="button header--hidden-sd"><span class="button__call"></span></button>
+    <button class="button header--hidden-sd"><span class="button__chat"></span></button>
+    <button class="button header--hidden-sd"><span class="button__profile"></span></button>
+    <img src="icons/divider.png" alt="">
+    <button class="button"><span class="button__repair"></span></button>
+    <button class="button"><span class="button__checkstatus"></span></button>
   </div>
-  </div>
+</div>
 
-  <div class="options">
-    <div class="options__container">
-      <div class="options__header">
-        <div class="options__divider"><img src="icons/highlight.png"></div>
-        <div class="options__title"><h1>Услуги и сервисы</h1></div>
+<div class="main">
+  <div class="main__container">
+    <div class="main__header">
+      <div class="main__divider"><img src="icons/highlight.png" alt=""></div>
+      <div class="main__title"><h1>Услуги и сервисы</h1></div>
+    </div>
+    <div class="main__options main__options--hidden">
+      <div class="main__option">
+        <div class="option__text">Оставить заявку </div>
+        <button class="button"><span class="button__repair"></span></button>
       </div>
-      <div class="options__icons options__icons--hidden">
-          <div class="options__option1">
-            <div class="options__text1">Оставить заявку </div>
-            <div class="options__img1"><img src="icons/repair.png" alt="Услуги"></div>
-          </div>
-          <div class="options__option2">
-            <div class="options__text2">Статус ремонта </div>
-            <div class="options__img2"><img src="icons/checkstatus.png" alt="Поиск"></div>
-          </div>
+      <div class="main__option">
+        <div class="option__text">Статус ремонта </div>
+        <button class="button"><span class="button__checkstatus"></span></button>
       </div>
-      </div>
-    <div class="options__list">
-      <div class="options__elem">Ремонтируемые устройства</div>
-      <div class="options__elem">Дополнительные услуги</div>
-      <div class="options__elem">Цены на услуги</div>
-      <div class="options__elem">Адреса сервисных центров</div>
-      <div class="options__elem">Специальные цены</div>
-      <div class="options__elem options__elem--moved">Отзывы</div>
     </div>
   </div>
-  <div class="about">
-    <div class="about__main">
-      <p class="about__all">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-      <p class="about__hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-      <p class="about__hidden_768">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-      <p class="about__readmore"><img class="about__readmore_open" src="icons/more.png">    Читать далее</p>
-    </div>
-    <div class="about__image"><img src="icons/cps1.png"></div>
+  <div class="main__list">
+    <div class="main__elem">Ремонтируемые устройства</div>
+    <div class="main__elem">Дополнительные услуги</div>
+    <div class="main__elem">Цены на услуги</div>
+    <div class="main__elem">Адреса сервисных центров</div>
+    <div class="main__elem">Специальные цены</div>
+    <div class="main__elem">Отзывы</div>
   </div>
+</div>
+<div class="about">
+  <div class="about__main">
+    <p class="about__all">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+    <p class="about__all--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+    <p class="about__all--hidden-md">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+    <p class="about__readmore"><img class="about__readmore_open" src="icons/more.png" alt="">    Читать далее</p>
+  </div>
+  <div class="about__image"><img class="cpsphoto" src="icons/cps1.png" alt="Фото вывески"></div>
+</div>
 </body>
 </html>
 
