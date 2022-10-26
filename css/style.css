@@ -75,7 +75,6 @@ html, body {
 }
 
 .button__burger {
-  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -87,7 +86,6 @@ html, body {
 }
 
 .button__call {
-  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -99,7 +97,6 @@ html, body {
 }
 
 .button__chat {
-  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -111,7 +108,6 @@ html, body {
 }
 
 .button__profile {
-  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -123,7 +119,6 @@ html, body {
 }
 
 .button__repair {
-  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -135,7 +130,6 @@ html, body {
 }
 
 .button__checkstatus {
-  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
