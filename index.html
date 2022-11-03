@@ -9,17 +9,17 @@
 <body>
 <div class="header">
   <div class="header__sd">
-  <button class="button"><span class="button__burger"></span></button>
+  <button class="button button__burger"></button>
   <img class="header--hidden-sd" src="icons/divider.png" alt="">
   <img src="icons/logo.png" alt="Логотип">
   </div>
   <div class="header__md">
-    <button class="button header--hidden-sd"><span class="button__call"></span></button>
-    <button class="button header--hidden-sd"><span class="button__chat"></span></button>
-    <button class="button header--hidden-sd"><span class="button__profile"></span></button>
+    <button class="button button__call header--hidden-sd"></button>
+    <button class="button button__chat header--hidden-sd"></button>
+    <button class="button button__profile header--hidden-sd"></button>
     <img src="icons/divider.png" alt="">
-    <button class="button"><span class="button__repair"></span></button>
-    <button class="button"><span class="button__checkstatus"></span></button>
+    <button class="button button__repair"></button>
+    <button class="button button__checkstatus"></button>
   </div>
 </div>
 
@@ -32,21 +32,21 @@
     <div class="main__options main__options--hidden">
       <div class="main__option">
         <div class="option__text">Оставить заявку </div>
-        <button class="button"><span class="button__repair"></span></button>
+        <button class="button button__repair"></button>
       </div>
       <div class="main__option">
         <div class="option__text">Статус ремонта </div>
-        <button class="button"><span class="button__checkstatus"></span></button>
+        <button class="button button__checkstatus"></button>
       </div>
     </div>
   </div>
   <div class="main__list">
-    <div class="main__elem">Ремонтируемые устройства</div>
-    <div class="main__elem">Дополнительные услуги</div>
-    <div class="main__elem">Цены на услуги</div>
-    <div class="main__elem">Адреса сервисных центров</div>
-    <div class="main__elem">Специальные цены</div>
-    <div class="main__elem">Отзывы</div>
+    <button class="main__elem">Ремонтируемые устройства</button>
+    <button class="main__elem">Дополнительные услуги</button>
+    <button class="main__elem">Цены на услуги</button>
+    <button class="main__elem">Адреса сервисных центров</button>
+    <button class="main__elem">Специальные цены</button>
+    <button class="main__elem">Отзывы</button>
   </div>
 </div>
 <div class="about">
@@ -54,9 +54,48 @@
     <p class="about__all">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
     <p class="about__all--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
     <p class="about__all--hidden-md">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-    <p class="about__readmore"><img class="about__readmore_open" src="icons/more.png" alt="">    Читать далее</p>
+    <button class="about__readmore"><img class="about__readmore_open" src="icons/more.png" alt="">    Читать далее</button>
   </div>
   <div class="about__image"><img class="cpsphoto" src="icons/cps1.png" alt="Фото вывески"></div>
 </div>
+<div class="wrapper wrapper__closed">
+  <div class="menu">
+    <div class="menu__header">
+      <div class="menu__logo">
+        <button class="button button__close"></button>
+        <img src="icons/logo.png" alt="Логотип">
+      </div>
+      <button class="button button__search"></button>
+    </div>
+    <div class="menu__main">
+      <ul class="menu__options">
+        <li class="menu__option active">Ремонт техники</li>
+        <li class="menu__option">Услуги и сервисы</li>
+        <li class="menu__option">Корпоративным клиентам</li>
+        <li class="menu__option">Продавцам техники</li>
+        <li class="menu__option">Партнерам</li>
+        <li class="menu__option">Производителям</li>
+        <li class="menu__option">Наши сервисные центры</li>
+        <li class="menu__option">Контакты</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__buttons">
+      <button class="button button__call"></button>
+      <button class="button button__chat"></button>
+      <button class="button button__profile"></button>
+    </div>
+    <div class="footer__contacts">
+      <div class="footer__mail">mail@cps.com</div>
+      <div class="footer__phone">8 800 890 8900</div>
+    </div>
+    <div class="footer__lang">
+      <button class="lang">RU</button>
+      <button class="lang">EN</button>
+      <button class="lang">CH</button></div>
+  </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

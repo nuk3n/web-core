@@ -30,6 +30,7 @@
 }
 
 html, body {
+  position: relative;
   font-family: "TT Lakes", serif, sans-serif;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -74,6 +75,16 @@ html, body {
 
 /****************BUTTONS ********************/
 
+/* Обнуление стилей кнопки */
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .button {
   position: relative;
   min-width:40px;
@@ -81,72 +92,47 @@ html, body {
   border-radius: 50%;
   background-color: #FF3E79;
   border: 0;
+  transition-duration: 0.5s;
+  background-position:center;
+  background-repeat: no-repeat;
 }
 
 .button__burger {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url('../icons/burger.png');
-  background-position:center;
-  background-repeat: no-repeat;
 }
 
 .button__call {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url('../icons/call.png');
-  background-position:center;
-  background-repeat: no-repeat;
 }
 
 .button__chat {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url('../icons/chat.png');
-  background-position:center;
-  background-repeat: no-repeat;
 }
 
 .button__profile {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url('../icons/profile.png');
-  background-position:center;
-  background-repeat: no-repeat;
 }
 
 .button__repair {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url('../icons/repair.png');
-  background-position:center;
-  background-repeat: no-repeat;
 }
 
 .button__checkstatus {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   background-image: url('../icons/checkstatus.png');
-  background-position:center;
-  background-repeat: no-repeat;
+}
+
+.button__close {
+  background-image: url('../icons/close.png');
+}
+
+.button__search {
+  background-image: url('../icons/search.png');
+
+}
+
+.button:hover {
+  transform: scale(1.2);
+  background-color: #ff0000;
 }
 
 /********** MAIN **********/
@@ -156,12 +142,11 @@ html, body {
   margin: 0;
 }
 
-
-
 .main__list{
   display:flex;
   margin: 0 22px 0 10px;
   overflow-x: auto;
+
 }
 
 .main__elem {
@@ -172,7 +157,7 @@ html, body {
   line-height: 40px;
 }
 
-.main__elem:first-child {
+.main__elem:focus {
   border: 2px solid #B8FFEC;
   border-radius: 6px;
   background-color: #ffffff;
@@ -236,9 +221,124 @@ h1 {
   border-radius: 2%;
 }
 .about__readmore {
+  display: block;
+  margin-top: 16px;
   font-weight: 500;
   font-size: 16px;
   white-space: pre;
+}
+
+/*********************** BURGER ************************/
+
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 320px;
+  height: 100vh;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 16px 0 52px 0 #0E185033,
+  -2px 0 4px 0 #454F7E05;
+  transition-duration: 0.7s;
+}
+
+.wrapper__closed {
+  transform: translateX(-500%);
+}
+
+
+/**************** BURGER HEADER *********************/
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+
+}
+
+.menu__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+
+/********************* BURGER OPTIONS *******************/
+
+.menu__options {
+  margin: 40px 0 0 0;
+  list-style: none;
+  padding: 0;
+}
+
+.menu__option {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 24px;
+  line-height: 32px;
+}
+
+.menu__option:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  top: 0;
+  left: 0;
+  border-radius: 0 5px 5px 0;
+  display: none;
+}
+
+.menu__option:hover {
+  color: #7E7E82;
+}
+
+.menu__option:hover:before {
+  display: block;
+}
+
+/***************** BURGER FOOTER ****************/
+
+.footer {
+  padding-left: 24px;
+}
+
+.footer__buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__contacts {
+  margin-top: 16px;
+}
+
+.footer__phone {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.footer__lang {
+  display: flex;
+  margin-top: 40px;
+  gap: 7px;
+}
+
+.lang:focus {
+  color: #7E7E82;
 }
 
 /**************** MEDIA 768px *****************/
@@ -299,7 +399,7 @@ h1 {
     justify-content: space-between;
   }
   .main__elem:last-child {
-    padding: 0 8px;
+    padding: 0 0px;
     margin-top: 10px;
   }
   .about__all--hidden-md {
@@ -307,4 +407,5 @@ h1 {
     display: inline;
   }
 }
+
 
