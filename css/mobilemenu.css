@@ -36,8 +36,9 @@ body{
 }
 
 .wrapper {
+    overflow: auto;
     width: 320px;
-    height: 100%;
+    height: 100vh;
     line-height: 24px;
     display: flex;
     flex-direction: column;
@@ -67,6 +68,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 24px;
+
 }
 
 .menu__logo {
@@ -86,61 +88,30 @@ button {
     background-color: #FF3E79;
     border: 0;
     transition-duration: 0.5s;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 
 .button__close {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background-image: url('../icons/close.png');
-    background-position:center;
-    background-repeat: no-repeat;
 }
 
 .button__search {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background-image: url('../icons/search.png');
-    background-position:center;
-    background-repeat: no-repeat;
+
 }
 
 .button__call {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background-image: url('../icons/call.png');
-    background-position:center;
-    background-repeat: no-repeat;
 }
 
 .button__chat {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background-image: url('../icons/chat.png');
-    background-position:center;
-    background-repeat: no-repeat;
 }
 
 .button__profile {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
     background-image: url('../icons/profile.png');
-    background-position:center;
-    background-repeat: no-repeat;
+
 }
 
 .button:hover {
