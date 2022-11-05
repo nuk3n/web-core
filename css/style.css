@@ -211,21 +211,130 @@ h1 {
 
 /*********** ABOUT ************/
 
-.about__all--hidden, .about__all--hidden-md {
-  visibility: hidden;
-  display: none;
+.about__text {
+  height: 130px;
+  overflow: hidden;
 }
+
 
 .cpsphoto {
   width: 320px;
   border-radius: 2%;
 }
-.about__readmore {
+.button__readmore {
   display: block;
-  margin-top: 16px;
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   white-space: pre;
+}
+
+/************************** BRANDS *************************/
+
+
+.brands__title {
+  height: 80px;
+  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  position: relative;
+}
+
+.brands__text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-transform: uppercase;
+  color: #7E7E82;
+  padding: 16px;
+}
+
+.swiper-wrapper {
+  padding-bottom: 30px;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.card {
+  margin: 16px 0 0 10px;
+  display: flex;
+  min-width: 224px;
+  max-width: 240px;
+  min-height: 72px;
+  background-color: #FFFFFF;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+
+
+.card__brand--lenovo {
+  width: 108px;
+  height: 32px;
+  background-image: url("../icons/lenovo.png");
+}
+
+.card__brand--samsung {
+  width: 116px;
+  height: 39px;
+  background-image: url("../icons/samsung.png");
+}
+
+.card__brand--hp {
+  width: 120px;
+  height: 50px;
+  background-image: url("../icons/hp.png");
+  background-repeat: no-repeat;
+}
+
+.card__brand--sony {
+  width: 128px;
+  height: 26px;
+  background-image: url("../icons/sony.png");
+}
+
+.card__button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FF3E79;
+  border-radius: 20px;
+  background-image: url("../icons/dropdown.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.button__show {
+  margin-left: 10px;
+  display: none;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+
+}
+.button__arrow {
+  margin-right: 10px;
+}
+.button__arrow--rotate {
+  transform: rotate(180deg);
+}
+/* Обнуление стилей кнопки */
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /*********************** BURGER ************************/
@@ -359,9 +468,8 @@ h1 {
     justify-items: flex-end;
   }
 
-  .about__all--hidden {
-    visibility: visible;
-    display: inline;
+  .about__text {
+    height: 150px;
   }
   .about {
     display: flex;
@@ -378,6 +486,24 @@ h1 {
   .cpsphoto {
     min-width: 100%;
     border-radius: 2%;
+  }
+  .brands__title {
+    height: 56px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-height: 185px;
+    padding-bottom: 0;
+  }
+  .swiper-wrapper__full {
+    max-height: 100%;
+  }
+  .button__show {
+    display: inline-block;
+    margin-top: 15px;
+    align-self: center;
   }
 }
 
@@ -402,10 +528,25 @@ h1 {
     padding: 0 0px;
     margin-top: 10px;
   }
-  .about__all--hidden-md {
-    visibility: visible;
-    display: inline;
+  .button__readmore {
+    display: none;
+  }
+  .brands__title {
+    height: 56px;
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-height: 185px;
+    padding-bottom: 0;
+  }
+  .swiper-wrapper__full {
+    max-height: 100%;
   }
 }
 
+.about__text--full {
+  height: 90%;
+}
 

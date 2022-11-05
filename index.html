@@ -4,9 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <title>Title</title>
 </head>
 <body>
+
 <div class="header">
   <div class="header__sd">
   <button class="button button__burger"></button>
@@ -49,15 +55,76 @@
     <button class="main__elem">Отзывы</button>
   </div>
 </div>
+
 <div class="about">
   <div class="about__main">
-    <p class="about__all">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-    <p class="about__all--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-    <p class="about__all--hidden-md">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-    <button class="about__readmore"><img class="about__readmore_open" src="icons/more.png" alt="">    Читать далее</button>
+    <div class="about__text">
+      <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+      <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+    </div>
+    <button class="button__readmore"><img class="button__arrow" src="icons/more.png" alt=""><span class="button__text">Читать далее</span></button>
   </div>
   <div class="about__image"><img class="cpsphoto" src="icons/cps1.png" alt="Фото вывески"></div>
 </div>
+
+<div class="brands"></div>
+  <div class="brands__title"><p class="brands__text">Ремонт техники различных брендов</p></div>
+<!-- Slider main container -->
+    <div class="swiper">
+  <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+    <!-- Slides -->
+        <div class="swiper-slide card">
+          <div class="card__brand--lenovo"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--sony"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--lenovo"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--samsung"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--hp"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--lenovo"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--hp"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--sony"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--samsung"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--hp"></div>
+          <div class="card__button"></div>
+        </div>
+        <div class="swiper-slide card">
+          <div class="card__brand--sony"></div>
+          <div class="card__button"></div>
+        </div>
+      </div>
+  <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+  </div>
+<button class="button__show"><img class="button__arrow" src="icons/more.png" alt=""> <span class="button__text">Показать все</span></button>
+</div>
+
 <div class="wrapper wrapper__closed">
   <div class="menu">
     <div class="menu__header">
@@ -96,6 +163,8 @@
       <button class="lang">CH</button></div>
   </div>
 </div>
+
 <script src="script.js"></script>
+<script src="swiper.js"></script>
 </body>
 </html>
